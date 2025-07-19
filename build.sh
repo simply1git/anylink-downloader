@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
-# Install yt-dlp
-curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-chmod a+rx /usr/local/bin/yt-dlp
+# Create local bin directory
+mkdir -p bin
+
+# Download yt-dlp locally
+curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ./bin/yt-dlp
+# Make it executable
+chmod +x ./bin/yt-dlp
